@@ -1,7 +1,87 @@
-.logo {
+body {
+    margin: 0px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Assets/Ratrodbackground.jpg');
+    background-size: cover;
+    background-position: 60% top;
+    height: 100vh;
+}
+main {
     font-family: 'Major Mono Display', monospace;
-    font-size: 3em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    font-size: 2em;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding-top: 10%;
+}
+.nav_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+a {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: white;
 }
 .desktop_text_container {
     display: none;
+}
+.circle_parent {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.circle_container {
+    background-image: url(assets/Erik.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.subheading {
+    text-align: center;
+    font-size: .6em;
+}
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        padding-top: 0%;
+    }
+    main {
+        font-family: 'Major Mono Display', monospace;
+        color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        padding-top: 10px;
+    }
+    .name, .subheading, .circle_container {
+        display: none;
+    }
+    .nav_items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    a {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .logo_nav_container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
