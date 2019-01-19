@@ -16,12 +16,13 @@ main {
     display: flex;
     justify-content: flex-end;
     margin: 0;
-    padding-top: 10%;
+    padding-top: 50px;
 }
 .nav_items {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    text-align: right;
 }
 a {
     display: flex;
@@ -59,6 +60,8 @@ a {
 @media only screen and (min-width: 600px) {
     .logo {
         padding-top: 0%;
+        font-size: 2.5em;
+        text-align: right;
     }
     main {
         font-family: 'Major Mono Display', monospace;
